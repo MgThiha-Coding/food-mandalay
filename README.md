@@ -1,39 +1,69 @@
-# MandalarX
+# Food Mandalay
 
-A Flutter food delivery app built with Supabase, Riverpod, Feature-based MVVM, Flutter Map, Firebase, OneSignal, and other technologies.
+A Flutter-based food delivery application built for Mandalay, Myanmar.
+
+Food Mandalay is a personal project focused on providing a modern food ordering experience with restaurant discovery, location-based features, online ordering, merchant communication, and push notifications.
 
 ## Features
 
 - User authentication
 - Restaurant and food browsing
+- Food and restaurant search
 - Location and map integration
-- Cart and checkout
-- Order placement and order history
-- Merchant chat
+- Cart management
+- Checkout and order placement
+- Order history and tracking
+- Customer–merchant chat
+- Food and product reviews
 - Push notifications
+- Multi-language support
+- Responsive UI for mobile, tablet, and desktop
 
 ## Tech Stack
 
-- Flutter & Dart
+### Frontend
+
+- Flutter
+- Dart
 - Riverpod
-- Feature-based MVVM
+- Feature-based MVVM architecture
+
+### Backend and Services
+
 - Supabase
-- Firebase
-- Flutter Map
-- OneSignal
 - PostgreSQL
+- Firebase
+- OneSignal
+- Flutter Map
 
-## Project Status
+### Other Technologies
 
-🚧 **Still in development**
+- REST APIs
+- Supabase Realtime
+- Firebase Services
+- Push Notifications
+- Location-based services
 
-This is a personal project and is actively being developed.
-The main client features are currently working, while some parts are still being improved and refined.
+## Architecture
 
-## Getting Started
+The project follows a feature-based MVVM architecture with Riverpod for state management.
 
-```bash
-git clone https://github.com/MgThiha-Coding/mandalarx.git
-cd mandalarx
-flutter pub get
-flutter run
+```text
+lib/
+├── core/
+├── features/
+│   ├── auth/
+│   ├── cart/
+│   ├── category/
+│   ├── checkout/
+│   ├── explore/
+│   ├── favourites/
+│   ├── home/
+│   ├── location/
+│   ├── message/
+│   ├── order_history/
+│   ├── product_detail/
+│   ├── profile/
+│   ├── review/
+│   └── search/
+└── shared/
